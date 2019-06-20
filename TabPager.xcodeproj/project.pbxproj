@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C2A4138233AE64000E6F90E /* Pods_TabPager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38813FB4D05329EFB3CCDBC1 /* Pods_TabPager.framework */; };
 		FC71BEE722465A9800357E49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71BEE622465A9800357E49 /* AppDelegate.swift */; };
 		FC71BEE922465A9800357E49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71BEE822465A9800357E49 /* ViewController.swift */; };
 		FC71BEEC22465A9800357E49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC71BEEA22465A9800357E49 /* Main.storyboard */; };
 		FC71BEEE22465A9A00357E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC71BEED22465A9A00357E49 /* Assets.xcassets */; };
 		FC71BEF122465A9A00357E49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC71BEEF22465A9A00357E49 /* LaunchScreen.storyboard */; };
+		FC71BEFC2246669D00357E49 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71BEFB2246669D00357E49 /* OneViewController.swift */; };
+		FC71BEFE224666C600357E49 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC71BEFD224666C600357E49 /* TwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38813FB4D05329EFB3CCDBC1 /* Pods_TabPager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabPager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B56390EA834F1CE627F1F90 /* Pods-TabPager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabPager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabPager/Pods-TabPager.debug.xcconfig"; sourceTree = "<group>"; };
+		AF648959C713D54C822DA542 /* Pods-TabPager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabPager.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabPager/Pods-TabPager.release.xcconfig"; sourceTree = "<group>"; };
 		FC71BEE322465A9800357E49 /* TabPager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabPager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC71BEE622465A9800357E49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC71BEE822465A9800357E49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		FC71BEED22465A9A00357E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC71BEF022465A9A00357E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC71BEF222465A9A00357E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC71BEFB2246669D00357E49 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		FC71BEFD224666C600357E49 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C2A4138233AE64000E6F90E /* Pods_TabPager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AC4BE4986D5F08825003A66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38813FB4D05329EFB3CCDBC1 /* Pods_TabPager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5205573764245B4879A7862 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B56390EA834F1CE627F1F90 /* Pods-TabPager.debug.xcconfig */,
+				AF648959C713D54C822DA542 /* Pods-TabPager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FC71BEDA22465A9800357E49 = {
 			isa = PBXGroup;
 			children = (
 				FC71BEE522465A9800357E49 /* TabPager */,
 				FC71BEE422465A9800357E49 /* Products */,
+				A5205573764245B4879A7862 /* Pods */,
+				3AC4BE4986D5F08825003A66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +82,24 @@
 		FC71BEE522465A9800357E49 /* TabPager */ = {
 			isa = PBXGroup;
 			children = (
+				FC71BEF8224661DD00357E49 /* View */,
 				FC71BEE622465A9800357E49 /* AppDelegate.swift */,
 				FC71BEE822465A9800357E49 /* ViewController.swift */,
 				FC71BEEA22465A9800357E49 /* Main.storyboard */,
 				FC71BEED22465A9A00357E49 /* Assets.xcassets */,
 				FC71BEEF22465A9A00357E49 /* LaunchScreen.storyboard */,
 				FC71BEF222465A9A00357E49 /* Info.plist */,
+				FC71BEFB2246669D00357E49 /* OneViewController.swift */,
+				FC71BEFD224666C600357E49 /* TwoViewController.swift */,
 			);
 			path = TabPager;
+			sourceTree = "<group>";
+		};
+		FC71BEF8224661DD00357E49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC71BEF522465A9A00357E49 /* Build configuration list for PBXNativeTarget "TabPager" */;
 			buildPhases = (
+				557E5B2F883C7CD4219706F0 /* [CP] Check Pods Manifest.lock */,
 				FC71BEDF22465A9800357E49 /* Sources */,
 				FC71BEE022465A9800357E49 /* Frameworks */,
 				FC71BEE122465A9800357E49 /* Resources */,
+				CE48B3C7E8B35139DEDF93A1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +170,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		557E5B2F883C7CD4219706F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TabPager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE48B3C7E8B35139DEDF93A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TabPager/Pods-TabPager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabPager/Pods-TabPager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC71BEDF22465A9800357E49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC71BEFC2246669D00357E49 /* OneViewController.swift in Sources */,
 				FC71BEE922465A9800357E49 /* ViewController.swift in Sources */,
 				FC71BEE722465A9800357E49 /* AppDelegate.swift in Sources */,
+				FC71BEFE224666C600357E49 /* TwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +361,7 @@
 		};
 		FC71BEF622465A9A00357E49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B56390EA834F1CE627F1F90 /* Pods-TabPager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +380,7 @@
 		};
 		FC71BEF722465A9A00357E49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF648959C713D54C822DA542 /* Pods-TabPager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
